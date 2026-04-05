@@ -75,6 +75,11 @@
         .opened { background: #ccc !important; color: #666; pointer-events: none; }
         
         .hidden { display: none; }
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -97,7 +102,20 @@
             </div>
 
             <button onclick="processContacts()">Generate Personalized List</button>
-            <button onclick="clearData()" style="background: #e74c3c; margin-top: 10px;">Clear Everything</button>
+
+
+                  <button onclick="clearData()" 
+    style="background: none; 
+           color: #e74c3c; 
+           border: 1px solid #e74c3c; 
+           margin-top: 20px; 
+           padding: 5px 10px; 
+           font-size: 0.75rem; 
+           width: auto; 
+           font-weight: normal; 
+           opacity: 0.7;">
+    Reset/Clear Data
+</button>
         </div>
 
         <div id="contactList"></div>
