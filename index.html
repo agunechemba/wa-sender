@@ -75,52 +75,28 @@
         .opened { background: #ccc !important; color: #666; pointer-events: none; }
         
         .hidden { display: none; }
-
-
-
-
-
     </style>
 </head>
 <body>
-
     <div class="container">
         <div class="card">
             <h2>WA-Sender</h2>
             <div class="hint">
                 <strong>Placeholders:</strong> Use <code>@name</code>, <code>@phone</code>, <code>@email</code>, or <code>@address</code> in your message.
             </div>
-
             <div class="input-group">
                 <label>Upload Spreadsheet (CSV)</label>
                 <input type="file" id="csvFile" accept=".csv">
             </div>
-
             <div class="input-group">
                 <label>Your Message</label>
                 <textarea id="messageBox" placeholder="Hi @name, your order is ready for @address!"></textarea>
             </div>
-
-            <button onclick="processContacts()">Generate Personalized List</button>
-
-
-                  <button onclick="clearData()" 
-    style="background: none; 
-           color: #e74c3c; 
-           border: 1px solid #e74c3c; 
-           margin-top: 20px; 
-           padding: 5px 10px; 
-           font-size: 0.75rem; 
-           width: auto; 
-           font-weight: normal; 
-           opacity: 0.7;">
-    Reset/Clear Data
-</button>
+            <button onclick="processContacts()">Generate</button>
+            <button onclick="clearData()" style="background: none; color: #e74c3c; border: 1px solid #e74c3c; margin-top: 20px; padding: 5px 10px; font-size: 0.75rem; width: auto; font-weight: normal; opacity: 0.7;">Reset/Clear Data</button>
         </div>
-
         <div id="contactList"></div>
     </div>
-
     <script src="app.js"></script>
 </body>
 </html>
