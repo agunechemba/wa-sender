@@ -1,4 +1,4 @@
-# 📱 Personalized WhatsApp Bulk Sender (Manual)
+# 📱 Personalized WhatsApp Bulk Sender (WA-Sender Manual)
 
 A lightweight, privacy-focused web application that allows you to send personalized WhatsApp messages to a list of contacts uploaded via a CSV spreadsheet. This tool uses the **WhatsApp Click-to-Chat API**, meaning it works natively on both mobile and desktop without requiring a paid WhatsApp Business API account.
 
