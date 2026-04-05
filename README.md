@@ -17,7 +17,7 @@ A lightweight, privacy-focused web application that allows you to send personali
 Create a CSV file (e.g., in Excel or Google Sheets) with the following headers:
 | Name | Phone | Email | Address |
 | :--- | :--- | :--- | :--- |
-| John Doe | 2348012345678 | john@example.com | Lagos, Nigeria |
+| Agunechemba Ekene | 2349066115252 | mr.agunechemba@gmail.com | Lagos, Nigeria |
 
 > **Note:** Phone numbers **must** include the country code without the `+` sign or leading zeros.
 
