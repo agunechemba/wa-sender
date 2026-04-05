@@ -20,7 +20,7 @@
             margin: 0; padding: 15px;
             display: flex; flex-direction: column; align-items: center;
         }
-
+       
         .container { width: 100%; max-width: 500px; }
 
         .card { 
@@ -82,7 +82,11 @@
         <div class="card">
             <h2>WA-Sender</h2>
             <div class="hint">
-                <strong>Placeholders:</strong> Use <code>@name</code>, <code>@phone</code>, <code>@email</code>, or <code>@address</code> in your message.
+            Upload a <b>.CSV</b> file with a header row containing <b>Phone</b>, <b>Name</b>, <b>Email</b>, and <b>Address</b>. 
+            <br><br>
+            The <b>Phone</b> column is required (e.g., 2348012345678).
+            <br><br>
+            Use placeholders like <code>@name</code>, <code>@phone</code>, <code>@email</code>, or <code>@address</code> in your message to personalize!
             </div>
             <div class="input-group">
                 <label>Upload Spreadsheet (CSV)</label>
