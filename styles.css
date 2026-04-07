@@ -1,0 +1,200 @@
+:root {
+    --primary: #25D366;
+    --primary-hover: #1da851;
+    --secondary: #075e54;
+    --bg: #f0f2f5;
+    --card-bg: #ffffff;
+    --text-main: #1c1e21;
+    --text-muted: #606770;
+    --border: #dddfe2;
+}
+
+body.email-theme {
+    --primary: #0078d4;
+    --primary-hover: #005a9e;
+    --secondary: #2b3e50;
+}
+
+body { 
+    font-family: 'Inter', -apple-system, sans-serif; 
+    background-color: var(--bg); 
+    color: var(--text-main);
+    margin: 0; padding: 20px;
+    display: flex; flex-direction: column; align-items: center;
+    line-height: 1.6;
+}
+
+.container { width: 100%; max-width: 650px; }
+
+.card { 
+    background: var(--card-bg); padding: 30px; border-radius: 16px; 
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05); margin-bottom: 24px; 
+}
+
+.header-section { margin-bottom: 25px; border-bottom: 1px solid var(--border); padding-bottom: 15px; }
+.header-section h2 { margin: 0; color: var(--secondary); font-size: 1.8rem; }
+.header-section p { color: var(--text-muted); margin: 8px 0 0; font-size: 0.95rem; }
+
+
+
+.guide-box {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+
+/* Placeholder Badge Styles */
+.placeholder-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tag {
+    background: #f0f2f5;
+    color: var(--secondary);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border: 1px solid var(--border);
+}
+
+body.email-theme .tag {
+    background: #e7f3ff;
+    color: var(--primary);
+}
+
+
+
+/* Prevent text shrinking on orientation change */
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Make buttons easier to tap (Apple/Google standard is 44px minimum) */
+button, .send-link {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Add spacing for mobile keyboards */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Less padding on small screens */
+    }
+    .card {
+        padding: 20px; /* Slimmer cards */
+        border-radius: 12px;
+    }
+    .contact-item {
+        flex-direction: column; /* Stack name and button on very small phones */
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .send-link {
+        width: 100%; /* Full width button on mobile for easy tapping */
+        text-align: center;
+    }
+}
+
+
+
+
+.input-group { margin-bottom: 18px; }
+label { display: block; font-weight: 600; margin-bottom: 8px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; }
+
+input, textarea { 
+    width: 100%; padding: 12px; border: 1.5px solid var(--border); 
+    border-radius: 8px; box-sizing: border-box; font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.1); }
+
+.btn-primary { 
+    width: 100%; padding: 15px; background: var(--primary); 
+    color: white; border: none; border-radius: 8px; 
+    font-size: 1rem; font-weight: 700; cursor: pointer; transition: all 0.2s;
+}
+
+.btn-primary:hover { background: var(--primary-hover); transform: translateY(-1px); }
+
+/* List Styling */
+.contact-item {
+    background: white; padding: 18px; border-radius: 12px;
+    margin-bottom: 12px; display: flex; justify-content: space-between;
+    align-items: center; border: 1px solid var(--border); transition: transform 0.2s;
+}
+.contact-item:hover { transform: scale(1.01); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+
+.send-link {
+    background: var(--secondary); color: white; text-decoration: none;
+    padding: 10px 20px; border-radius: 6px; font-size: 0.85rem; font-weight: 600;
+}
+
+.opened { background: #e4e6eb !important; color: #8a8d91 !important; pointer-events: none; }
+
+/* Footer Styling */
+/* Compact List-Style Footer */
+.main-footer { 
+    width: 100%; 
+    margin-top: 30px; 
+    padding: 15px 0; 
+    border-top: 1px solid var(--border); 
+}
+
+.footer-content { 
+    text-align: center; 
+}
+
+.footer-title { 
+    font-size: 0.7rem; 
+    font-weight: 700; 
+    color: var(--text-muted); 
+    margin-bottom: 8px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-links { 
+    display: flex; 
+    flex-direction: column; /* Stacks links vertically to save width */
+    align-items: center;
+    gap: 5px; 
+}
+
+.footer-item { 
+    text-decoration: none; 
+    color: var(--secondary); 
+    font-weight: 500; 
+    font-size: 0.85rem; 
+    padding: 2px 0;
+}
+
+.active-link { 
+    color: var(--primary); 
+    border-bottom: 1.5px solid var(--primary); 
+}
+
+.copyright { 
+    margin-top: 12px; 
+    font-size: 0.7rem; 
+    color: #bbb; 
+}
+
+
+
+.main-footer {
+    padding-bottom: env(safe-area-inset-bottom);
+}

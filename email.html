@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>WhatsApp Sender Pro</title>
+    <title>Email Sender Pro</title>
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#25D366">
@@ -11,12 +11,12 @@
     <meta name="apple-mobile-web-app-title" content="SenderPro">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
 </head>
-<body>
+<body class="email-theme">
     <div class="container">
         <div class="card">
             <div class="header-section">
-                <h2>WhatsApp Sender</h2>
-                <p>Generate personalized bulk messages</p>
+                <h2>Email Sender</h2>
+                <p>Generate personalized bulk emails.</p>
             </div>
             <div class="guide-box">
                 Placeholders:
@@ -36,10 +36,14 @@
                 <input type="file" id="csvFile" accept=".csv">
             </div>
             <div class="input-group">
-                <label>Message</label>
-                <textarea id="messageBox" placeholder="Hi @name, your appointment for @interest is on @date."></textarea>
+                <label>Subject</label>
+                <input type="text" id="subjectBox" placeholder="Meeting about @interest for @company">
             </div>
-            <button class="btn-primary" onclick="processData()">Generate Links</button>
+            <div class="input-group">
+                <label>Body</label>
+                <textarea id="messageBox" placeholder="Hello @name, I am writing regarding @interest..."></textarea>
+            </div>
+            <button class="btn-primary" onclick="processData()">Generate Drafts</button>
             <center><button onclick="resetApp()" style="margin-top:15px; color:red; background:none; border:none; cursor:pointer;">Clear All</button></center>
         </div>
         <div id="contactList"></div>
