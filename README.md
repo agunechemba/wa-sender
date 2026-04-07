@@ -1,58 +1,58 @@
-# 📱 Personalized WhatsApp Bulk Sender (WA-Sender Manual)
+# 🚀 Universal Bulk Sender (WhatsApp & Email)
 
-A lightweight, privacy-focused web application that allows you to send personalized WhatsApp messages to a list of contacts uploaded via a CSV spreadsheet. This tool uses the **WhatsApp Click-to-Chat API**, meaning it works natively on both mobile and desktop without requiring a paid WhatsApp Business API account.
+A professional, lightweight, and privacy-focused web suite designed for personalized outreach. This project allows users to send bulk messages via **WhatsApp** or **Email** using data from a simple CSV spreadsheet, all without a backend server or expensive API subscriptions.
 
 ## ✨ Features
-* **Zero Backend:** No server, no database, and no API keys required. It runs entirely in your browser.
-* **Smart Personalization:** Use placeholders like `@name`, `@phone`, `@email`, and `@address` to customize every message.
-* **Local Persistence:** Uses `LocalStorage` to save your progress. If you refresh the page or close the tab, your contacts and "Sent" status remain intact.
-* **Mobile Optimized:** A clean, responsive UI designed for easy tapping on smartphones.
-* **Privacy First:** Your contact list never leaves your device. Data is processed locally and is never uploaded to an external server.
-
----
-
-## 🚀 How to Use
-
-### 1. Prepare your Spreadsheet
-Create a CSV file (e.g., in Excel or Google Sheets) with the following headers:
-| Name | Phone | Email | Address |
-| :--- | :--- | :--- | :--- |
-| Agunechemba Ekene | 2349066115252 | mr.agunechemba@gmail.com | Lagos, Nigeria |
-
-> **Note:** Phone numbers **must** include the country code without the `+` sign or leading zeros.
-
-### 2. Set Up the App
-1.  Download the `index.html` and `app.js` files into the same folder.
-2.  Open `index.html` in any modern web browser (Chrome, Safari, Firefox).
-
-### 3. Send Messages
-1.  **Upload:** Select your CSV file.
-2.  **Draft:** Type your message in the text area using placeholders (e.g., *"Hi @name, we are delivering to @address today!"*).
-3.  **Generate:** Click **Generate Personalized List**.
-4.  **Send:** Click the **Send** button next to each contact. It will open WhatsApp with the message pre-filled. Simply hit "Send" in WhatsApp and return to the browser.
+* **Dual-Service Suite:** Seamlessly switch between a WhatsApp Sender and an Email Sender via a centralized configuration.
+* **Smart Personalization:** Supports 8 dynamic placeholders: `@name`, `@phone`, `@email`, `@address`, `@company`, `@interest`, `@date`, and `@other`.
+* **Privacy-First Architecture:** Your data never leaves your browser. CSV files are parsed locally, and no information is ever uploaded to an external server.
+* **Persistent Progress:** Uses `LocalStorage` to save your message templates, subjects, and "Sent" status across browser refreshes.
+* **Mobile-Optimized UI:** A clean, responsive dashboard designed for professional use on both desktop and smartphones.
+* **Zero-Cost Hosting:** Fully compatible with GitHub Pages.
 
 ---
 
 ## 🛠️ Technical Stack
-* **HTML5 & CSS3:** For the responsive, mobile-first interface.
-* **Vanilla JavaScript:** For logic and DOM manipulation.
-* **[PapaParse](https://www.papaparse.com/):** A powerful library used to parse CSV files directly in the browser.
-* **LocalStorage API:** To ensure data persistence across browser refreshes.
+* **Core:** Vanilla JavaScript (ES6+), HTML5, CSS3.
+* **Library:** [PapaParse](https://www.papaparse.com/) for lightning-fast, client-side CSV parsing.
+* **Config-Driven:** Centralized `config.js` for easy navigation and branding management.
+* **Storage:** Browser `LocalStorage` API for data persistence.
 
 ---
 
-## ⚠️ Safety & Best Practices
-WhatsApp has strict anti-spam policies. To protect your phone number from being banned:
-* **Permission:** Only send messages to people who have consented to receive them.
-* **Pacing:** Do not send hundreds of messages in a very short window. Aim for 20-30 messages per session, then take a break.
-* **Variety:** Use the `@name` placeholder to make each message unique; identical bulk messages are more likely to be flagged by automated systems.
+## 🚀 Getting Started
+
+### 1. Prepare your Spreadsheet
+Create a CSV file (using Excel, Google Sheets, or Notepad) with headers matching your needs.
+**Example Headers:** `Name`, `Phone`, `Email`, `Company`, `Interest`, `Date`
+
+> **Note for WhatsApp:** Ensure the `Phone` column includes the country code without the `+` sign (e.g., `23480...`).
+
+### 2. Usage Instructions
+1.  **Select Service:** Use the footer navigation to choose between WhatsApp or Email.
+2.  **Upload Data:** Select your `.csv` file.
+3.  **Draft Template:** Write your message using placeholders (e.g., *"Hi @name, how is the team at @company?"*).
+4.  **Generate:** Click the **Generate** button to create a personalized list.
+5.  **Execute:** Click **Send** (WhatsApp) or **Draft** (Email) to launch the respective application with pre-filled data.
 
 ---
 
-## 📄 License
-This project is open-source. Feel free to modify and adapt it for your own personal or business use.
+## 📂 Project Structure
+* `index.html`: The primary WhatsApp Sender interface.
+* `email.html`: The specialized Email Sender interface.
+* `app.js`: The "Engine" containing the universal placeholder logic and state management.
+* `styles.css`: The professional, mobile-friendly design system.
+* `config.js`: The global controller for navigation, branding, and the auto-updating footer.
 
 ---
 
-### Pro-Tip for Mobile
-To use this easily on your smartphone, you can host these files for free using **GitHub Pages** or **Netlify**. Simply upload the folder, open the link on your mobile browser, and you can send messages on the go!
+## ⚠️ Best Practices
+* **Anti-Spam:** Only send messages to individuals who have consented to receive them.
+* **Pacing:** When sending via WhatsApp, avoid sending too many messages in a single minute to stay within platform guidelines.
+* **Verification:** Always test the first generated link in your list to ensure your placeholders are mapping correctly to your CSV headers.
+
+---
+
+## 📄 License & Attribution
+This project is open-source and free to use. 
+Developed and maintained by **Agunechemba Digital Tools**.
