@@ -1,7 +1,7 @@
 const AppConfig = {
     brandName: "Agunechemba Digital Marketing Tools",
     services: [
-        { name: "Home", url: "https://agunechemba.github.io", icon: "" },
+        { name: "Home", url: "https://agunechemba.name.ng/2026/04/05/Digital-Marketing-Tools.html", icon: "" },
         { name: "WhatsApp Sender", url: "index.html", icon: "" },
         { name: "Email Sender", url: "email.html", icon: "" }
     ],
