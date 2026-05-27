@@ -1,0 +1,35 @@
+{
+  "short_name": "SenderPro",
+  "name": "WhatsApp & Email Sender Pro",
+  "description": "Generate personalized bulk messages and emails using local CSV data securely.",
+  "icons": [
+    {
+      "src": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4e4.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "https://img.icons8.com/fluent/192/000000/paper-plane.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "https://img.icons8.com/fluent/512/000000/paper-plane.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "https://img.icons8.com/fill/512/000000/paper-plane.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#f0f2f5",
+  "theme_color": "#25D366",
+  "display": "standalone",
+  "orientation": "portrait-primary"
+}
